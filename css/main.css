@@ -11,7 +11,7 @@ body {
 	background-color: #efefef;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	max-width: 1200px;
 }
 
@@ -22,9 +22,30 @@ body {
 	padding: 20px;
 	text-align: center;
 	margin:10px;
-	width: 100px;
+	width: 150px;
 	font-size: 1em;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
+
+.box2 {
+	order: 16;
+	flex-grow: 2;
+	flex-shrink: 2;
+}
+
+.box3{
+	order: 2;
+}
+
+.box1{
+	order: 15;
+}
+
+.box4{
+	order: -1;
+}
+
 
 /* handling handheld / mobile @ landscape */
 

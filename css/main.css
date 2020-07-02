@@ -1,5 +1,9 @@
 body {
 	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	/* an em becomes the unit of measure you place here. In this case it is 16px*/
+	/* 1em = 16px */
+	/* 2em = 32px */
 }
 
 .container {
@@ -19,5 +23,29 @@ body {
 	text-align: center;
 	margin:10px;
 	width: 100px;
+	font-size: 1em;
+}
+
+/* handling handheld / mobile @ landscape */
+
+@media screen and (min-width: 480px) {
+	.box {
+	    background-color: red;
+	    color: #fefefe;
+	    width: 150px;
+}
+
+}
+
+/* tablet @ portrait */
+
+@media screen and (min-width: 768px) {
+
+.box {
+	    background-color: red;
+	    color: #fefefe;
+	    width: 150px;
+	    font-size: 3em;
+}
 
 }

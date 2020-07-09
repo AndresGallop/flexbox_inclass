@@ -10,11 +10,7 @@ body {
 .container {
 	margin: 0 auto;
 	background-color: #efefef;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
 	max-width: 1200px;
-	min-width: 375px;
 }
 
 .box {
@@ -24,53 +20,33 @@ body {
 	padding: 20px;
 	text-align: center;
 	margin:10px;
-	width: 500px;
-	font-size: 1em;
-	flex-grow: 1;
-	flex-shrink: 1;
 
 }
 
-.box2 {
-	order: 1;
-	flex-grow: 2;
-	flex-shrink: 2;
+.logo{
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.box3{
-	order: 2;
-}
+@media screen and (min-width: 600px) {
+	#main-header {
+		display: flex;
+		flex-direction: row;
+	}
 
-.box1{
-	order: -15;
+	  /*flex-grow, flex-shrink, flex-basis*/
+	.box {flex: 1 1 auto;}
+	.nav{flex: 1 1 600px;}
 
-}
+	.logo{
+		order: -1;
+		flex: 0 1 220px;
+		margin-left: 10px;
+	}
 
-.box4{
-	order: 3;
-}
-
-
-/* handling handheld / mobile @ landscape */
-
-@media screen and (min-width: 480px) {
-	.box {
-	    background-color: red;
-	    color: #fefefe;
-	    width: 150px;
-}
-
-}
-
-/* tablet @ portrait */
-
-@media screen and (min-width: 768px) {
-
-.box {
-	    background-color: red;
-	    color: #fefefe;
-	    width: 150px;
-	    font-size: 3em;
-}
-
+	#products {
+		display: flex;
+		flex-direction: row;
+	}
 }

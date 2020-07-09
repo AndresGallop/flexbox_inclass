@@ -1,3 +1,4 @@
+/*default mobile first rules*/
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -13,6 +14,7 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	max-width: 1200px;
+	min-width: 375px;
 }
 
 .box {
@@ -22,14 +24,15 @@ body {
 	padding: 20px;
 	text-align: center;
 	margin:10px;
-	width: 150px;
+	width: 500px;
 	font-size: 1em;
 	flex-grow: 1;
 	flex-shrink: 1;
+
 }
 
 .box2 {
-	order: 16;
+	order: 1;
 	flex-grow: 2;
 	flex-shrink: 2;
 }
@@ -39,11 +42,12 @@ body {
 }
 
 .box1{
-	order: 15;
+	order: -15;
+
 }
 
 .box4{
-	order: -1;
+	order: 3;
 }
 
 
